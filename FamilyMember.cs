@@ -27,11 +27,12 @@
             if (Father != null)
                 parrents += $" |Father: {Father?.Name}";
 
+            //Husband / Wife
             string spouse = string.Empty;
             if (Spouse != null)
-                spouse += $"Spouce: {Spouse?.Name}| ";
+                spouse += $"Spouce: {Spouse?.Name} ";
 
-            return $"Name: {Name}| Sex: {Sex}| Birthday: {BirthDay}| {spouse}{parrents}\n{childrens}";
+            return $"Name: {Name}| Sex: {Sex}| Birthday: {BirthDay}| {parrents}\t{spouse}\n{childrens}";
         }
     }
 }
